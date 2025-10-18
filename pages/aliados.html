@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aliados do Batman</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Estilos principais -->
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
+    <!-- ================= HEADER ================= -->
     <header>
         <div class="logo">
-            <img src="images/logo_batman.png" alt="Logo do Batman">
+            <img src="../images/logo_batman.png" alt="Logo do Batman">
             <h1>Aliados</h1>
         </div>
+
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
+                <li><a href="../index.html">Início</a></li>
                 <li><a href="historia.html">História</a></li>
                 <li><a href="aliados.html" class="active">Aliados</a></li>
                 <li><a href="inimigos.html">Inimigos</a></li>
@@ -24,44 +28,53 @@
         </nav>
     </header>
 
-    <!-- Seção -->
+    <!-- ================= HERO SECTION ================= -->
     <section class="hero small-hero">
+        <button class="btn-back" onclick="goBack()">← Voltar</button>
         <div class="hero-text">
             <h2>Companheiros do Cavaleiro das Trevas</h2>
         </div>
     </section>
 
-    <!-- Conteúdo -->
+    <!-- ================= MAIN CONTENT ================= -->
     <main class="content">
         <div class="card-container">
+            <!-- Card 1 -->
             <div class="card">
-                <img src="images/robin_icon.jpg" alt="Robin">
+                <img src="../images/robin_icon.jpg" alt="Robin">
                 <h3>Robin</h3>
                 <p>O parceiro mais famoso do Batman, símbolo de esperança em Gotham.</p>
             </div>
 
+            <!-- Card 2 -->
             <div class="card">
-                <img src="images/alfred-pennyworth" alt="Alfred Pennyworth">
+                <img src="../images/alfred-pennyworth.jpg" alt="Alfred Pennyworth">
                 <h3>Alfred</h3>
                 <p>O mordomo e conselheiro fiel de Bruce Wayne, quase um pai para ele.</p>
             </div>
 
+            <!-- Card 3 -->
             <div class="card">
-                <img src="images/bat-girl.jpg" alt="Batgirl">
+                <img src="../images/bat-girl.jpg" alt="Batgirl">
                 <h3>Batgirl</h3>
                 <p>Barbara Gordon, filha do Comissário Gordon, lutando contra o crime como Batgirl.</p>
             </div>
 
+            <!-- Card 4 -->
             <div class="card">
-                <img src="images/gordon.jpg" alt="Comissário Gordon">
+                <img src="../images/gordon.jpg" alt="Comissário Gordon">
                 <h3>Comissário Gordon</h3>
                 <p>Chefe da polícia de Gotham e um dos maiores aliados do Batman.</p>
             </div>
         </div>
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
         <p>🦇 Desenvolvido por Gabriel | Projeto acadêmico Batman | 2025</p>
     </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
