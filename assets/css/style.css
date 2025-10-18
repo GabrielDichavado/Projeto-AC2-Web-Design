@@ -84,21 +84,35 @@ nav a.active {
 }
 
 .hero-text {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
-  animation: fadeIn 2s ease-in-out;
+    background: rgba(0, 0, 0, 0.65); /* fundo translúcido mais escuro */
+    padding: 40px 60px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 215, 0, 0.3); /* borda dourada suave */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    max-width: 700px; /* limita a largura do bloco */
+    text-align: center;
+    backdrop-filter: blur(4px); /* leve desfoque do fundo (efeito de vidro) */
+    animation: fadeIn 2s ease-in-out;
 }
 
+/* Título principal */
 .hero-text h2 {
-  font-size: 40px;
-  color: #FFD700;
-  margin-bottom: 10px;
+    font-size: 48px;
+    color: #FFD700;
+    margin-bottom: 15px;
+    text-shadow: 0 0 12px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.1);
+    letter-spacing: 1.5px;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
 
+/* Parágrafo */
 .hero-text p {
-  font-size: 18px;
-  margin-bottom: 20px;
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    font-weight: 300;
 }
 
 /* ======= BOTÕES ======= */
@@ -123,6 +137,7 @@ nav a.active {
   text-align: center;
   margin: 30px 0;
   font-size: 28px;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.1);
   color: #FFD700;
   text-transform: uppercase;
   letter-spacing: 2px;
