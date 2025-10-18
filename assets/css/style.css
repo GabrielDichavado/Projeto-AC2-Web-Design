@@ -43,7 +43,7 @@ header .logo img {
 
 header h1 {
   font-size: 20px;
-  color: #FFD700;
+  color: #ffffff;
   text-shadow: 2px 2px 5px #000;
 }
 
@@ -69,9 +69,9 @@ nav a.active {
 
 /* ======= HERO ======= */
 .hero {
-  background: url("https://wallpapers.com/images/featured/fotos-de-gotham-city-5a0vnlvzjkcprirr.jpg")
+  background: url("../img/Gotham-City-Image.jpg")
     center/cover no-repeat;
-  height: 120vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
