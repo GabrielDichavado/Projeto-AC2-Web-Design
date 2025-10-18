@@ -231,3 +231,50 @@ footer {
   .hero-text p { font-size: 14px; }
   .btn { padding: 8px 15px; font-size: 14px; }
 }
+
+/* ================= CONTENT (CONTEÚDO PRINCIPAL) ================= */
+.content {
+    max-width: 900px;                    /* largura limitada */
+    margin: 50px auto;                   /* centralizado vertical e horizontal */
+    padding: 40px 30px;                  /* respiro interno generoso */
+    background: rgba(17, 17, 17, 0.85);  /* fundo levemente translúcido */
+    border-radius: 15px;                 /* cantos mais arredondados */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8); /* sombra profunda */
+    backdrop-filter: blur(4px);          /* efeito de leve desfoque do fundo */
+    border: 1px solid rgba(255, 215, 0, 0.2); /* borda dourada sutil */
+}
+
+/* ===== Títulos dentro do content ===== */
+.content h2, .content h3 {
+    text-align: center;
+    color: #FFD700;                     /* dourado padrão */
+    margin-top: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+/* ===== Parágrafos ===== */
+.content p {
+    font-size: 18px;
+    line-height: 1.8;                   /* mais espaçamento entre linhas */
+    margin-bottom: 20px;
+    color: #e0e0e0;
+    text-align: justify;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.7); /* leve destaque */
+}
+
+/* ===== Listas dentro do content ===== */
+.content ul {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.content ul li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #f5f5f5;
+}
