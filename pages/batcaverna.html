@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Batcaverna</title>
-  <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  <!-- Cabeçalho -->
+  <!-- ================= HEADER ================= -->
   <header>
     <div class="logo">
-      <img src="../assets/img/logo_batman.png" alt="Logo do Batman">
+      <img src="../assets/img/Batman-Logo.png" alt="Logo do Batman">
       <h1>Batcaverna</h1>
     </div>
 
@@ -26,52 +26,128 @@
     </nav>
   </header>
 
-  <!-- Seção principal -->
+  <!-- ================= HERO SECTION ================= -->
   <section class="hero small-hero">
+    <button class="btn-back" onclick="goBack()">← Voltar</button>
     <div class="hero-text">
-      <h2>O Esconderijo Secreto</h2>
+      <h2>Refúgio do Morcego</h2>
+      <p>Entre as sombras de Gotham, a mente de Bruce Wayne encontra sua força.  
+      Aqui nascem seus veículos, suas armas e sua estratégia.</p>
     </div>
   </section>
 
+  <!-- ================= MAIN CONTENT ================= -->
   <main class="content">
-    <h2>Equipamentos</h2>
-    <ul class="equip-list">
-      <li>Batmóvel</li>
-      <li>Batwing</li>
-      <li>Batarangs</li>
-      <li>Batcomputador</li>
-    </ul>
+    <!-- GADGETS -->
+    <section>
+      <h2>Gadgets</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="../assets/img/batarang-batman.jpg" alt="Batarang">
+          <h3>Batarang</h3>
+          <p>O clássico bumerangue em forma de morcego, usado tanto para combate quanto para distração.</p>
+        </div>
 
-    <h2>Galeria de Imagens</h2>
-    <div class="card-container">
-      <div class="card">
-        <img src="../assets/img/batmovel-batman.webp" alt="Batmóvel">
-        <h3>Batmóvel</h3>
-      </div>
+        <div class="card">
+          <img src="../assets/img/batclaw.jpg" alt="Batclaw">
+          <h3>Batclaw</h3>
+          <p>Gancho retrátil que permite ao Batman escalar edifícios e se mover rapidamente pelos telhados.</p>
+        </div>
 
-      <div class="card">
-        <img src="../assets/img/batwing-batman.jpg" alt="Batwing">
-        <h3>Batwing</h3>
-      </div>
+        <div class="card">
+          <h3>Explosivo de Gel</h3>
+          <p>Explosivo de alta precisão, moldável e seguro para o uso tático em ambientes fechados.</p>
+        </div>
 
-      <div class="card">
-        <img src="../assets/img/batarang-batman.jpg" alt="Batarangs">
-        <h3>Batarangs</h3>
-      </div>
+        <div class="card">
+          <h3>Bat-Tracer</h3>
+          <p>Dispositivo de rastreamento usado para monitorar veículos e inimigos em tempo real.</p>
+        </div>
 
-      <div class="card">
-        <img src="../assets/img/setup-batman.jpeg" alt="Batcomputador">
-        <h3>Batcomputador</h3>
+        <div class="card">
+          <h3>Criptex Digital</h3>
+          <p>Mini dispositivo de criptografia WayneTech que protege dados e comunicações.</p>
+        </div>
+
+        <div class="card">
+          <h3>Mini Bat-Sinalizador</h3>
+          <p>Versão portátil do Bat-Sinal, usada para sinalização de emergência e distração de inimigos.</p>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- VEÍCULOS -->
+    <section>
+      <h2>Veículos</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="../assets/img/batmovel-batman.webp" alt="Batmóvel">
+          <h3>Batmóvel</h3>
+          <p>Blindado, veloz e multifuncional, o Batmóvel é a principal arma de mobilidade do Cavaleiro das Trevas.</p>
+        </div>
+
+        <div class="card">
+          <img src="../assets/img/batwing-batman.jpg" alt="Batwing">
+          <h3>Batwing</h3>
+          <p>Aeronave tática de alta velocidade equipada com sistemas de camuflagem e armamento leve.</p>
+        </div>
+
+        <div class="card">
+          <h3>Batpod</h3>
+          <p>Motocicleta de combate ágil e precisa, ideal para perseguições em áreas urbanas.</p>
+        </div>
+
+        <div class="card">
+          <h3>Tumbler</h3>
+          <p>Veículo de guerra experimental, precursor do Batmóvel moderno, usado em missões de alto risco.</p>
+        </div>
+
+        <div class="card">
+          <h3>Batboat</h3>
+          <p>Embarcação furtiva de alta velocidade, usada para operações subaquáticas e resgates.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIA E SUPORTE -->
+    <section>
+      <h2>Tecnologia e Suporte</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="../assets/img/setup-batman.jpeg" alt="Batcomputador">
+          <h3>Batcomputador</h3>
+          <p>Centro de inteligência da Batcaverna, conecta todos os dispositivos e sistemas WayneTech.</p>
+        </div>
+
+        <div class="card">
+          <h3>Traje Tático</h3>
+          <p>Desenvolvido com materiais balísticos e nanotecnologia, protege o Batman sem comprometer sua mobilidade.</p>
+        </div>
+
+        <div class="card">
+          <h3>Sistema de Vigilância WayneTech</h3>
+          <p>Rede avançada de câmeras e sensores que monitoram Gotham em tempo real.</p>
+        </div>
+
+        <div class="card">
+          <h3>Banco de Dados Criminal</h3>
+          <p>Arquivo digital com registros detalhados de criminosos, aliados e ameaças potenciais.</p>
+        </div>
+
+        <div class="card">
+          <h3>Batcaverna</h3>
+          <p>Mais que um esconderijo — é o coração tecnológico e emocional do Cavaleiro das Trevas.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Rodapé -->
+  <!-- ================= FOOTER ================= -->
   <footer>
     <p>🦇 Desenvolvido por Gabriel | Projeto Acadêmico Batman | 2025</p>
   </footer>
 
-  <!-- Scripts -->
+  <!-- ================= SCRIPTS ================= -->
   <script src="../js/menu.js"></script>
   <script src="../js/script.js"></script>
 </body>
