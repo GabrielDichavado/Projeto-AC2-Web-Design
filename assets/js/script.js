@@ -1,61 +1,77 @@
 // Função para botão "Voltar"
 function goBack() {
     window.history.back();
-}
-// Seleciona elementos do pop-up
-const popup = document.getElementById('popup');
-const popupTitle = document.getElementById('popup-title');
-const popupSubtitle = document.getElementById('popup-subtitle');
-const popupImg = document.getElementById('popup-img');
-const popupRealName = document.getElementById('popup-realname');
-const popupFirst = document.getElementById('popup-first');
-const popupAffiliation = document.getElementById('popup-affiliation');
-const popupSkills = document.getElementById('popup-skills');
-const popupPop = document.getElementById('popup-pop');
-const popupComics = document.getElementById('popup-comics');
-const popupAchievement = document.getElementById('popup-achievement');
-const popupDescription = document.getElementById('popup-description');
-const popupClose = document.querySelector('.popup-close');
+}// =========================
+// Const com vilões
+// =========================
+const viloes = [
+  {
+    nome: "Coringa",
+    aparicao: "Batman #1 (1940)",
+    descricao: "O príncipe do crime de Gotham, mestre do caos e inimigo mortal do Batman.",
+    habilidades: "Planejamento criminoso, insanidade estratégica",
+    imagem: "imagens/coringa.jpg"
+  },
+  {
+    nome: "Charada",
+    aparicao: "Detective Comics #140 (1948)",
+    descricao: "Vilão que desafia Batman com enigmas complexos e armadilhas inteligentes.",
+    habilidades: "Crimes intelectuais, enigmas complexos",
+    imagem: "imagens/charada.jpg"
+  },
+  // Adicione os outros vilões aqui
+];
 
-// Função para abrir pop-up
-function showPopup(data) {
-    popupTitle.textContent = data.name;
-    popupSubtitle.textContent = data.signature || '';
-    popupImg.src = data.img;
-    popupImg.alt = data.name;
-    popupRealName.textContent = data.realName || 'Desconhecido';
-    popupFirst.textContent = data.firstAppearance || 'Desconhecido';
-    popupAffiliation.textContent = data.affiliation || 'Desconhecido';
-    popupSkills.textContent = data.skills || 'Desconhecido';
-    popupPop.textContent = data.popCulture || 'Desconhecido';
-    popupComics.textContent = data.otherComics || 'Desconhecido';
-    popupAchievement.textContent = data.achievement || 'Desconhecido';
-    popupDescription.textContent = data.description || '';
-    popup.style.display = 'flex';
+// =========================
+// Const com aliados
+// =========================
+const aliados = [
+  {
+    nome: "Robin",
+    aparicao: "Detective Comics #38 (1940)",
+    descricao: "Parceiro juvenil do Batman, ágil e esperto.",
+    habilidades: "Acrobacia, combate corpo a corpo",
+    imagem: "imagens/robin.jpg"
+  },
+  {
+    nome: "Batgirl",
+    aparicao: "Detective Comics #359 (1967)",
+    descricao: "Aliada do Batman, especialista em tecnologia e combate.",
+    habilidades: "Inteligência, combate, gadgets",
+    imagem: "imagens/batgirl.jpg"
+  },
+  // Adicione os outros aliados aqui
+];
+
+// =========================
+// Função para preencher pop-up
+// =========================
+function preencherPopup(personagem) {
+  const popup = document.querySelector("#popup");
+  popup.querySelector(".nome").innerText = personagem.nome;
+  popup.querySelector(".aparicao").innerText = personagem.aparicao;
+  popup.querySelector(".descricao").innerText = personagem.descricao;
+  popup.querySelector(".habilidades").innerText = personagem.habilidades;
+  popup.querySelector("img").src = personagem.imagem;
 }
 
-// Fechar pop-up
-popupClose.addEventListener('click', () => popup.style.display = 'none');
-popup.addEventListener('click', e => {
-    if(e.target === popup) popup.style.display = 'none';
+// =========================
+// Eventos de clique para vilões
+// =========================
+document.querySelectorAll(".card-vilao").forEach((card, index) => {
+  card.addEventListener("click", () => {
+    preencherPopup(viloes[index]);
+    abrirPopup(); // Função que você já tem para abrir o pop-up
+  });
 });
 
-// Adicionando clique aos cards
-document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', () => {
-        const data = {
-            name: card.querySelector('h3').textContent,
-            signature: '', // coloque aqui a frase de assinatura se quiser
-            img: card.querySelector('img').src,
-            realName: 'Informação', 
-            firstAppearance: 'Informação',
-            affiliation: 'Informação',
-            skills: 'Informação',
-            popCulture: 'Informação',
-            otherComics: 'Informação',
-            achievement: 'Informação',
-            description: 'Descrição detalhada do personagem'
-        };
-        showPopup(data);
-    });
+// =========================
+// Eventos de clique para aliados
+// =========================
+document.querySelectorAll(".card-aliado").forEach((card, index) => {
+  card.addEventListener("click", () => {
+    preencherPopup(aliados[index]);
+    abrirPopup();
+  });
 });
+
