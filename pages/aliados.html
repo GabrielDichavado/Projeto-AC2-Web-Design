@@ -35,7 +35,8 @@
         <button class="btn-back" onclick="goBack()">← Voltar</button>
         <div class="hero-text">
             <h2>Companheiros do Cavaleiro das Trevas</h2>
-            <p>Entre sombras e sacrifícios, surgem aqueles que lutam ao seu lado. Guerreiros guiados pela mesma missão: proteger Gotham, custe o que custar.</p>
+            <p>Entre sombras e sacrifícios, surgem aqueles que lutam ao seu lado. Guerreiros guiados pela mesma missão:
+                proteger Gotham, custe o que custar.</p>
         </div>
     </section>
 
@@ -103,6 +104,26 @@
     <footer>
         <p>🦇 Desenvolvido para disciplina de WEB-DESIGN | Projeto acadêmico Batman | 2025</p>
     </footer>
+
+    <!-- POP-UP GLOBAL -->
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <button class="popup-close">Fechar &times;</button>
+            <h2 id="popup-title">Nome do Personagem</h2>
+            <em id="popup-subtitle">Frase de assinatura</em>
+            <img id="popup-img" src="" alt="Imagem do personagem">
+
+            <p><strong>Nome verdadeiro:</strong> <span id="popup-realname"></span></p>
+            <p><strong>Primeira aparição:</strong> <span id="popup-first"></span></p>
+            <p><strong>Afiliação:</strong> <span id="popup-affiliation"></span></p>
+            <p><strong>Habilidades:</strong> <span id="popup-skills"></span></p>
+            <p><strong>Aparições em cultura pop:</strong> <span id="popup-pop"></span></p>
+            <p><strong>Outras HQs:</strong> <span id="popup-comics"></span></p>
+            <p><strong>Principal feito:</strong> <span id="popup-achievement"></span></p>
+
+            <p id="popup-description">Descrição longa do personagem.</p>
+        </div>
+    </div>
 
     <!-- ================= SCRIPTS ================= -->
     <script src="../assets/js/script.js"></script>
