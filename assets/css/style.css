@@ -144,7 +144,8 @@ nav a.active {
   letter-spacing: 2px;
 }
 
-/* ======= CARDS ======= */
+/* ======= CARDS ======= 
+/* --> Não consegui decidir se deixo esse estilo antigo dos cards ou não <--
 .card-container {
   display: flex;
   gap: 20px;
@@ -179,7 +180,7 @@ nav a.active {
   transform: scale(1.05);
   box-shadow: 0 0 15px #FFD700;
 }
-
+*/
 /* ======= FOOTER ======= */
 footer {
   text-align: center;
@@ -303,8 +304,8 @@ footer {
 }
 
 /* ================= CARDS PARA ALIADOS ================= */
-/*
-.allies-container {
+
+.card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -313,7 +314,7 @@ footer {
     margin: 0 auto;
 }
 
-.allies-container .card {
+.card-container .card {
     background: #1a1a1a;
     padding: 20px;
     border-radius: 12px;
@@ -323,31 +324,30 @@ footer {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.allies-container .card img {
+.card-container .card img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.allies-container .card img:hover {
+.card-container .card img:hover {
     transform: scale(1.05);
     filter: brightness(1.2);
 }
 
-.allies-container .card:hover {
+.card-container .card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #FFD700;
 }
 
-.allies-container .card h3 {
+.card-container .card h3 {
     margin: 10px 0 5px 0;
     color: #FFD700;
 }
 
-.allies-container .card p {
+.card-container .card p {
     color: #e0e0e0;
     font-size: 16px;
     line-height: 1.5;
-}*/
-
+}
